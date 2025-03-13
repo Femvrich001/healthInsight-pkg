@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><link rel="canonical" href="https://github.com/Femvrich001/healthInsight-pkg/API_reference/" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>API - healthinsight</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "API";
+        var mkdocs_page_input_path = "API_reference.md";
+        var mkdocs_page_url = "/Femvrich001/healthInsight-pkg/API_reference/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> healthinsight
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">API</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#table-of-contents">Table of Contents</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bmi-body-mass-index">BMI (Body Mass Index)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bai-body-adiposity-index">BAI (Body Adiposity Index)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#bsi-body-shape-index">BSI (Body Shape Index)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tbw-total-body-water">TBW (Total Body Water)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#corpulence-index">Corpulence Index</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#waist-to-hip-ratio">Waist-to-Hip Ratio</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pignet-index">Pignet Index</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#perinatal-mortality-rate">Perinatal Mortality Rate</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#maternal-mortality-ratio">Maternal Mortality Ratio</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#infant-mortality-rate">Infant Mortality Rate</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#birth-rate">Birth Rate</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#contributions">Contributions</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#author">Author</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../Userguide/">User Guide</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">healthinsight</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">API</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="healthinsight-api-reference">HealthInsight API Reference</h1>
+<p>This document provides a comprehensive overview of all the health indices functions and methods available in the <strong>HealthInsight</strong> package.</p>
+<h2 id="table-of-contents">Table of Contents</h2>
+<ul>
+<li><a href="#bmi-body-mass-index">BMI (Body Mass Index)</a></li>
+<li><a href="#bai-body-adiposity-index">BAI (Body Adiposity Index)</a></li>
+<li><a href="#bsi-body-shape-index">BSI (Body Shape Index)</a></li>
+<li><a href="#tbw-total-body-water">TBW (Total Body Water)</a></li>
+<li><a href="#corpulence-index">Corpulence Index</a></li>
+<li><a href="#waist-to-hip-ratio">Waist-to-Hip Ratio</a></li>
+<li><a href="#pignet-index">Pignet Index</a></li>
+<li><a href="#perinatal-mortality-rate">Perinatal Mortality Rate</a></li>
+<li><a href="#maternal-mortality-ratio">Maternal Mortality Ratio</a></li>
+<li><a href="#infant-mortality-rate">Infant Mortality Rate</a></li>
+<li><a href="#birth-rate">Birth Rate</a></li>
+</ul>
+<hr />
+<h2 id="bmi-body-mass-index">BMI (Body Mass Index)</h2>
+<p><strong>Definition:</strong> BMI is a measure of body fat based on weight and height.</p>
+<p><strong>Function:</strong></p>
+<pre><code class="language-python">HealthCalc.bmi(weight: float, height: float) -&gt; Tuple[float, str]
+</code></pre>
+<p><strong>Parameters:</strong>
+- <code>weight</code> (float): Weight in kilograms.
+- <code>height</code> (float): Height in meters.</p>
+<p><strong>Returns:</strong>
+- BMI value (float)
+- Category (str) - e.g., "Underweight", "Normal weight", "Overweight", "Obese"</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">bmi_value, category = HealthCalc.bmi(70, 1.75)
+print(f&quot;BMI: {bmi_value}, Category: {category}&quot;)
+</code></pre>
+<hr />
+<h2 id="bai-body-adiposity-index">BAI (Body Adiposity Index)</h2>
+<p><strong>Definition:</strong> BAI estimates body fat percentage based on hip circumference and height.</p>
+<p><strong>Function:</strong></p>
+<pre><code class="language-python">HealthCalc.bai(hip_circumference: float, height: float) -&gt; float
+</code></pre>
+<p><strong>Parameters:</strong>
+- <code>hip_circumference</code> (float): Hip circumference in centimeters.
+- <code>height</code> (float): Height in meters.</p>
+<p><strong>Returns:</strong>
+- BAI value (float)</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">bai_value = HealthCalc.bai(90, 1.75)
+print(f&quot;BAI: {bai_value}&quot;)
+</code></pre>
+<hr />
+<h2 id="bsi-body-shape-index">BSI (Body Shape Index)</h2>
+<p><strong>Definition:</strong> BSI evaluates body shape and weight distribution.</p>
+<p><strong>Function:</strong></p>
+<pre><code class="language-python">HealthCalc.bsi(weight: float, height: float, waist_circumference: float) -&gt; float
+</code></pre>
+<p><strong>Parameters:</strong>
+- <code>weight</code> (float): Weight in kilograms.
+- <code>height</code> (float): Height in meters.
+- <code>waist_circumference</code> (float): Waist circumference in centimeters.</p>
+<p><strong>Returns:</strong>
+- BSI value (float)</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">bsi_value = HealthCalc.bsi(70, 1.75, 85)
+print(f&quot;BSI: {bsi_value}&quot;)
+</code></pre>
+<hr />
+<h2 id="tbw-total-body-water">TBW (Total Body Water)</h2>
+<p><strong>Definition:</strong> Estimates the total amount of water in the body.</p>
+<p><strong>Function:</strong></p>
+<pre><code class="language-python">HealthCalc.tbw(weight: float, age: int, gender: str) -&gt; float
+</code></pre>
+<p><strong>Parameters:</strong>
+- <code>weight</code> (float): Weight in kilograms.
+- <code>age</code> (int): Age in years.
+- <code>gender</code> (str): "male" or "female".</p>
+<p><strong>Returns:</strong>
+- TBW value (float)</p>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">tbw_value = HealthCalc.tbw(70, 30, &quot;male&quot;)
+print(f&quot;Total Body Water: {tbw_value} L&quot;)
+</code></pre>
+<hr />
+<h2 id="corpulence-index">Corpulence Index</h2>
+<p><strong>Definition:</strong> Measures body mass relative to height.</p>
+<p><strong>Function:</strong></p>
+<pre><code class="language-python">HealthCalc.corpulence_index(weight: float, height: float) -&gt; float
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">ci_value = HealthCalc.corpulence_index(70, 1.75)
+print(f&quot;Corpulence Index: {ci_value}&quot;)
+</code></pre>
+<hr />
+<h2 id="waist-to-hip-ratio">Waist-to-Hip Ratio</h2>
+<p><strong>Function:</strong></p>
+<pre><code class="language-python">HealthCalc.waist_to_hip(waist: float, hip: float) -&gt; float
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">wh_ratio = HealthCalc.waist_to_hip(80, 90)
+print(f&quot;Waist-to-Hip Ratio: {wh_ratio}&quot;)
+</code></pre>
+<hr />
+<h2 id="pignet-index">Pignet Index</h2>
+<p><strong>Function:</strong></p>
+<pre><code class="language-python">HealthCalc.pignet_index(height: float, chest_circumference: float, weight: float) -&gt; float
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">pignet = HealthCalc.pignet_index(175, 90, 70)
+print(f&quot;Pignet Index: {pignet}&quot;)
+</code></pre>
+<hr />
+<h2 id="perinatal-mortality-rate">Perinatal Mortality Rate</h2>
+<p><strong>Function:</strong></p>
+<pre><code class="language-python">HealthCalc.perinatal_mortality(deaths: int, births: int) -&gt; float
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">pmr = HealthCalc.perinatal_mortality(50, 10000)
+print(f&quot;Perinatal Mortality Rate: {pmr}&quot;)
+</code></pre>
+<hr />
+<h2 id="maternal-mortality-ratio">Maternal Mortality Ratio</h2>
+<p><strong>Function:</strong></p>
+<pre><code class="language-python">HealthCalc.maternal_mortality_ratio(maternal_deaths: int, live_births: int) -&gt; float
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">mmr = HealthCalc.maternal_mortality_ratio(200, 50000)
+print(f&quot;Maternal Mortality Ratio: {mmr}&quot;)
+</code></pre>
+<hr />
+<h2 id="infant-mortality-rate">Infant Mortality Rate</h2>
+<p><strong>Function:</strong></p>
+<pre><code class="language-python">HealthCalc.infant_mortality(infant_deaths: int, live_births: int) -&gt; float
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">imr = HealthCalc.infant_mortality(300, 50000)
+print(f&quot;Infant Mortality Rate: {imr}&quot;)
+</code></pre>
+<hr />
+<h2 id="birth-rate">Birth Rate</h2>
+<p><strong>Function:</strong></p>
+<pre><code class="language-python">HealthCalc.birthrate(live_births: int, total_population: int) -&gt; float
+</code></pre>
+<p><strong>Example:</strong></p>
+<pre><code class="language-python">br = HealthCalc.birthrate(10000, 1000000)
+print(f&quot;Birth Rate: {br}&quot;)
+</code></pre>
+<hr />
+<h2 id="contributions">Contributions</h2>
+<p>Contributions are welcome! To contribute:
+1. Fork the repository.
+2. Create a new branch for your feature/fix.
+3. Commit your changes.
+4. Submit a pull request.</p>
+<p>Ensure to run tests before submitting:</p>
+<pre><code class="language-sh">pytest tests/
+</code></pre>
+<h2 id="author">Author</h2>
+<p>Developed by Olajide Oluwafemi Richard. Feel free to reach out for collaboration or inquiries!</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../Userguide/" class="btn btn-neutral float-right" title="User Guide">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../Userguide/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
